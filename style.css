@@ -12,13 +12,13 @@ html, body {
 }
 
 body {
-    color: #bfbfbf;
-    background: black;
+    color: white;
+    background: #4974a5;
     font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
 }
 
 h1 {
-    color: white;
+    color: #4974a5;
 }
 
 .titreBillet {
@@ -40,4 +40,8 @@ h1 {
 
 #titreBlog, #piedBlog {
     text-align: center;
+}
+
+#commentaires {
+color : white;
 }

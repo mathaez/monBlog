@@ -25,7 +25,9 @@
                             <time><?= $billet['date'] ?></time>
                         </header>
                         <p><?= $billet['contenu'] ?></p>
+                <div id="commentaires">
                         <em><a href="#">Commentaires</a></em>
+                </div>
                     </article>
                     <hr />
                 <?php endforeach; ?>
