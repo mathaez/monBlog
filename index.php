@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> MVC-simple
 <?php require 'Modele.php';
 
 $billets = getBillets();
