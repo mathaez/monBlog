@@ -1,6 +1,11 @@
 <?php
-function getBillets() {                
+
+function getBdD(){
     $bdd = new PDO('mysql:host=localhost;dbname=monblog;charset=utf8','testblog', '12345');
+    return $bdd;
+}
+function getBillets() {  
+    $bdd = getBdD();              
     $billets = $bdd->query('select idBillet as id, dateBillet as date,'
             . ' titreBillet as titre, contenuBillet as contenu from BILLET'
             . ' order by idBillet desc');
