@@ -1,7 +1,7 @@
 <?php
 
 function getBdD(){
-    $bdd = new PDO('mysql:host=localhost;dbname=monblog;charset=utf8','testblog', '12345');
+    $bdd = new PDO('mysql:host=localhost;dbname=monblog;charset=utf8','testblog', '12345', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
     return $bdd;
 }
 function getBillets() {  
