@@ -1,1 +1,3 @@
-<p> Une erreur est survenue : <?= $msgErreur ?> </p>
+<p> Une erreur est survenue :
+    <?= $msgErreur ?>
+</p>

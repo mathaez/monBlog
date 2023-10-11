@@ -17,7 +17,7 @@
         </header>
         <div id="contenu">
             <?php include $contenu ?>
-            </div> <!-- #contenu -->
+        </div> <!-- #contenu -->
         <footer id="piedBlog">
             Blog réalisé avec PHP, HTML5 et CSS.
         </footer>
