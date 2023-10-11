@@ -1,15 +1,16 @@
-
-<?php require 'Modele.php';
+<?php require
+    'Controleur.php';
 try {
-$billets = getBillets();
-$contenu = 'vueAccueil.php';
-require 'gabarit.php';
-
+    if (isset($_GET['action'])) {
+        if ($_GET['action'] == 'billet') {
+            $idBillet = $_GET['id'];
+            unBillet($idBillet);
+        } else {
+            erreur("Action non valide");
+        }
+    } else {
+        accueil();
+    }
+} catch (Exception $e) {
+    erreur($e->getMessage());
 }
-catch (Exception $e){
-    $msgErreur = $e->getMessage();
-    $contenu = 'vueErreur.php';
-    require 'gabarit.php';
-}
-    ?>
-    

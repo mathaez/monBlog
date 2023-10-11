@@ -15,7 +15,7 @@ foreach ($billets as $billet):
             <?= $billet['contenu'] ?>
         </p>
         <div id="commentaires">
-            <em><a href="billet.php?id=<?= $id ?>">Commentaires</a></em>
+            <em><a href="index.php?action=billet&id=<?= $id ?>">Commentaires</a></em>
         </div>
     </article>
     <hr />
